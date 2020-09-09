@@ -1,6 +1,7 @@
 package com.ndtv.testcases;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.ListIterator;
 
 import org.openqa.selenium.WebDriver;
@@ -43,7 +44,7 @@ public class WebApplicationTestCases extends CommonFunctions {
 	public void validateCityOnMap() throws InterruptedException {
 		wp = PageFactory.initElements(driver, WeatherPage.class);
 		sendKeys(wp.getSearchbox(), PageLocators.cityName);
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		cf.jsClick(driver, wp.cityNameInChecklist());
 		isDisplayed(wp.getcityTemperature());
 		click(wp.getcityTemperature());
@@ -56,8 +57,9 @@ public class WebApplicationTestCases extends CommonFunctions {
 		String city = getText(wp.leafletPopUpHeader());
 		AssertJUnit.assertTrue(city.contains(PageLocators.cityName));
 		ListIterator<String> itr = wp.leafletPopUpTemp().listIterator();
+		ArrayList<String> al=new ArrayList<String>();
 		while (itr.hasNext()) {
-			//System.out.println(itr.next().toString());
+			al.add(itr.next().toString());
 		}
 	}
 

@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 
 import com.ndtv.propertiesFile.PropertyFile;
 
@@ -26,9 +28,9 @@ public class BaseClass
 		driver.manage().window().maximize();
 		return driver;
 	}
-	@AfterClass
+	@AfterTest
 	public void shutBrowser()
 	{
-		driver.close();
+		driver.quit();
 	}
 }

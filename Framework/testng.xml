@@ -4,13 +4,14 @@
 <listeners>
 <listener class-name="com.ndtv.listeners.Listeners"/>
 </listeners>
-<parameter name = "TestCaseName" value="APITestCase"/> 
-<parameter name = "Browser" value="chrome"/>
-  <test name="Test">
+  <test name="WebApplicationTest">
     <classes>
-     <class name="com.ndtv.testcases.WebApplicationTestCases"/>
-     <class name="com.ndtv.restAssured.ResponseToJavaObjectDeserialization"/>
-      
+     <class name="com.ndtv.testcases.WebApplicationTestCases"/> 
     </classes>
-  </test> <!-- Test -->
+    </test>
+    <test name="APITest">
+    <classes>
+    	 <class name="com.ndtv.restAssured.ResponseToJavaObjectDeserialization"/> 
+    </classes>
+    </test>
 </suite> <!-- Suite -->
