@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="15356" started-at="2020-09-09T07:37:29Z" finished-at="2020-09-09T07:37:45Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="15356" started-at="2020-09-09T07:37:29Z" finished-at="2020-09-09T07:37:45Z">
+      <class name="com.ndtv.testcases.WebApplicationTestCases">
+        <test-method status="PASS" signature="initializeBrowserDriver()[pri:0, instance:com.ndtv.testcases.WebApplicationTestCases@2a4fb17b]" name="initializeBrowserDriver" is-config="true" duration-ms="7260" started-at="2020-09-09T07:37:29Z" finished-at="2020-09-09T07:37:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowserDriver -->
+        <test-method status="PASS" signature="launchNDTV()[pri:0, instance:com.ndtv.testcases.WebApplicationTestCases@2a4fb17b]" name="launchNDTV" duration-ms="3308" started-at="2020-09-09T07:37:37Z" finished-at="2020-09-09T07:37:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchNDTV -->
+        <test-method status="PASS" signature="shutBrowser()[pri:0, instance:com.ndtv.testcases.WebApplicationTestCases@2a4fb17b]" name="shutBrowser" is-config="true" duration-ms="4688" started-at="2020-09-09T07:37:40Z" finished-at="2020-09-09T07:37:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutBrowser -->
+      </class> <!-- com.ndtv.testcases.WebApplicationTestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
