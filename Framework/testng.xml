@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="com.ndtv.listeners.Listeners"/>
+</listeners>
+<parameter name = "TestCaseName" value="APITestCase"/> 
+<parameter name = "Browser" value="chrome"/>
+  <test name="Test">
+    <classes>
+     <class name="com.ndtv.testcases.WebApplicationTestCases"/>
+     <class name="com.ndtv.restAssured.ResponseToJavaObjectDeserialization"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
