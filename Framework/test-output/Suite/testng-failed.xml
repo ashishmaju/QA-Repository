@@ -4,18 +4,15 @@
   <listeners>
     <listener class-name="com.ndtv.listeners.Listeners"/>
   </listeners>
-  <test thread-count="5" name="WebApplicationTest(failed)">
+  <test thread-count="5" name="APITest(failed)">
+    <parameter name="type" value="API"/>
     <classes>
-      <class name="com.ndtv.testcases.WebApplicationTestCases">
+      <class name="com.ndtv.restAssured.ResponseToJavaObjectDeserialization">
         <methods>
-          <include name="validateCityOnMap"/>
-          <include name="initializeBrowserDriver"/>
-          <include name="navigateToWeather"/>
-          <include name="captureTemp"/>
-          <include name="shutBrowser"/>
-          <include name="launchNDTV"/>
+          <include name="getResponseBody"/>
+          <include name="weatherJsonResponse"/>
         </methods>
-      </class> <!-- com.ndtv.testcases.WebApplicationTestCases -->
+      </class> <!-- com.ndtv.restAssured.ResponseToJavaObjectDeserialization -->
     </classes>
-  </test> <!-- WebApplicationTest(failed) -->
+  </test> <!-- APITest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

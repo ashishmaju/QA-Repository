@@ -3,18 +3,18 @@ package com.ndtv.pojo;
 public class Main 
 
 {
-	private Float temp;
+	private Double temp;
 	private Float feels_like;
 	private Float temp_min;
 	private Float temp_max;
 	private int pressure;
-	private int humidity;
+	private Double humidity;
 	private int sea_level;
 	private int grnd_level;
-	public Float getTemp() {
+	public Double getTemp() {
 		return temp;
 	}
-	public void setTemp(Float temp) {
+	public void setTemp(Double temp) {
 		this.temp = temp;
 	}
 	public Float getFeels_like() {
@@ -41,10 +41,10 @@ public class Main
 	public void setPressure(int pressure) {
 		this.pressure = pressure;
 	}
-	public int getHumidity() {
+	public Double getHumidity() {
 		return humidity;
 	}
-	public void setHumidity(int humidity) {
+	public void setHumidity(Double humidity) {
 		this.humidity = humidity;
 	}
 	public int getSea_level() {

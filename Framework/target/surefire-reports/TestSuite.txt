@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.14 sec - in TestSuite
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 41.534 sec <<< FAILURE! - in TestSuite
+tempComparator(com.ndtv.restAssured.ResponseToJavaObjectDeserialization)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Temperature in Kelvin from API response : 35.0 and Temperature in Kelvin from WebUI is 308.15] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at com.ndtv.util.TemperatureUtility.compareTemperature(TemperatureUtility.java:53)
+	at com.ndtv.restAssured.ResponseToJavaObjectDeserialization.tempComparator(ResponseToJavaObjectDeserialization.java:50)
+

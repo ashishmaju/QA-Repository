@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ndtv.restAssured.ResponseToJavaObjectDeserialization" hash-for-method="getResponseBody">getResponseBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -137,6 +151,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ndtv.restAssured.ResponseToJavaObjectDeserialization</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getResponseBody">
+                  </a> <!-- getResponseBody -->
+                  <span class="method-name">getResponseBody</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at com.ndtv.util.TemperatureUtility.extractTempFromAPI(TemperatureUtility.java:69)
+	at com.ndtv.restAssured.ResponseToJavaObjectDeserialization.getResponseBody(ResponseToJavaObjectDeserialization.java:43)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -207,6 +241,7 @@
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- WebApplicationTest --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;APITest&quot;&gt;
+    &lt;parameter name=&quot;type&quot; value=&quot;API&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.ndtv.restAssured.ResponseToJavaObjectDeserialization&quot;/&gt;
     &lt;/classes&gt;
@@ -251,32 +286,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'launchNDTV')
+data.setCell(0, 1, 'navigateToWeather')
 data.setCell(0, 2, 'com.ndtv.testcases.WebApplicationTestCases')
-data.setCell(0, 3, 13067);
+data.setCell(0, 3, 22534);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateCityOnMap')
+data.setCell(1, 1, 'launchNDTV')
 data.setCell(1, 2, 'com.ndtv.testcases.WebApplicationTestCases')
-data.setCell(1, 3, 3432);
+data.setCell(1, 3, 8250);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'navigateToWeather')
-data.setCell(2, 2, 'com.ndtv.testcases.WebApplicationTestCases')
-data.setCell(2, 3, 2783);
+data.setCell(2, 1, 'weatherJsonResponse')
+data.setCell(2, 2, 'com.ndtv.restAssured.ResponseToJavaObjectDeserialization')
+data.setCell(2, 3, 2330);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'weatherJsonResponse')
-data.setCell(3, 2, 'com.ndtv.restAssured.ResponseToJavaObjectDeserialization')
-data.setCell(3, 3, 2487);
+data.setCell(3, 1, 'validateCityOnMap')
+data.setCell(3, 2, 'com.ndtv.testcases.WebApplicationTestCases')
+data.setCell(3, 3, 1345);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'captureTemp')
 data.setCell(4, 2, 'com.ndtv.testcases.WebApplicationTestCases')
-data.setCell(4, 3, 577);
+data.setCell(4, 3, 308);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'getResponseBody')
+data.setCell(5, 2, 'com.ndtv.restAssured.ResponseToJavaObjectDeserialization')
+data.setCell(5, 3, 6);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -309,30 +348,36 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">launchNDTV</span>
-                <span class="method-start">7687 ms</span>
+                <span class="method-start">6918 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">navigateToWeather</span>
-                <span class="method-start">20776 ms</span>
+                <span class="method-start">15190 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateCityOnMap</span>
-                <span class="method-start">23563 ms</span>
+                <span class="method-start">37726 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">captureTemp</span>
-                <span class="method-start">26998 ms</span>
+                <span class="method-start">39074 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">shutBrowser</span>
-                <span class="method-start">27578 ms</span>
+                <span class="method-start">39383 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ndtv.restAssured.ResponseToJavaObjectDeserialization</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">weatherJsonResponse</span>
-                <span class="method-start">29095 ms</span>
+                <span class="method-start">40604 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getResponseBody</span>
+                <span class="method-start">42940 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

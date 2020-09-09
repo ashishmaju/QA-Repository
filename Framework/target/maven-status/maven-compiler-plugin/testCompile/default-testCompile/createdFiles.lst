@@ -1,6 +1,9 @@
 com\ndtv\listeners\Listeners.class
+com\ndtv\util\TemperatureUtility.class
+com\ndtv\testcases\ComparatorTestCase.class
 com\ndtv\testcases\WebApplicationTestCases.class
 com\ndtv\locators\PageLocators.class
+com\ndtv\util\Report.class
 com\ndtv\keywords\CommonFunctions.class
 com\ndtv\pojo\Wind.class
 com\ndtv\testcases\BaseClass.class
@@ -13,3 +16,4 @@ com\ndtv\pages\HomePage.class
 com\ndtv\pojo\WeatherJsonResponse.class
 com\ndtv\pages\WeatherPage.class
 com\ndtv\pojo\Weather.class
+com\ndtv\util\ExcelUtil.class

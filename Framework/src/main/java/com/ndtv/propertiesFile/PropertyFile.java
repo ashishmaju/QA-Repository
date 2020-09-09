@@ -5,8 +5,9 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class PropertyFile {
+	public static Properties prop;
 	public static String propKey(String key) {
-		Properties prop = new Properties();
+		prop= new Properties();
 		try {
 
 			FileInputStream fis = new FileInputStream(
