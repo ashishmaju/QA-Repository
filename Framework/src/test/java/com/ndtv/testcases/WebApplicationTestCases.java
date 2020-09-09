@@ -57,7 +57,7 @@ public class WebApplicationTestCases extends CommonFunctions {
 		AssertJUnit.assertTrue(city.contains(PageLocators.cityName));
 		ListIterator<String> itr = wp.leafletPopUpTemp().listIterator();
 		while (itr.hasNext()) {
-			System.out.println(itr.next().toString());
+			//System.out.println(itr.next().toString());
 		}
 	}
 

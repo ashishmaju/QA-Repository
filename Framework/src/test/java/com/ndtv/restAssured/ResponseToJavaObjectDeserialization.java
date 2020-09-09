@@ -22,6 +22,6 @@ public class ResponseToJavaObjectDeserialization {
 		ResponseBody body = response.getBody();
 		WeatherJsonResponse responseBody = body.as(WeatherJsonResponse.class);
 
-		System.out.println(responseBody.getTimezone());
+		//System.out.println(responseBody.getTimezone());
 	}
 }
