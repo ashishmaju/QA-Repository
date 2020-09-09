@@ -7,10 +7,13 @@ C:\Users\91965\eclipse-workspace\AutonomousWorkbook\Framework\src\test\java\com\
 C:\Users\91965\eclipse-workspace\AutonomousWorkbook\Framework\src\test\java\com\ndtv\testcases\WebApplicationTestCases.java
 C:\Users\91965\eclipse-workspace\AutonomousWorkbook\Framework\src\test\java\com\ndtv\pojo\WeatherJsonResponse.java
 C:\Users\91965\eclipse-workspace\AutonomousWorkbook\Framework\src\test\java\com\ndtv\locators\PageLocators.java
+C:\Users\91965\eclipse-workspace\AutonomousWorkbook\Framework\src\test\java\com\ndtv\testcases\ComparatorTestCase.java
 C:\Users\91965\eclipse-workspace\AutonomousWorkbook\Framework\src\test\java\com\ndtv\keywords\CommonFunctions.java
 C:\Users\91965\eclipse-workspace\AutonomousWorkbook\Framework\src\test\java\com\ndtv\pojo\Main.java
 C:\Users\91965\eclipse-workspace\AutonomousWorkbook\Framework\src\test\java\com\ndtv\listeners\Listeners.java
 C:\Users\91965\eclipse-workspace\AutonomousWorkbook\Framework\src\test\java\com\ndtv\util\Report.java
+C:\Users\91965\eclipse-workspace\AutonomousWorkbook\Framework\src\test\java\com\ndtv\util\TemperatureUtility.java
 C:\Users\91965\eclipse-workspace\AutonomousWorkbook\Framework\src\test\java\com\ndtv\pojo\Weather.java
 C:\Users\91965\eclipse-workspace\AutonomousWorkbook\Framework\src\test\java\com\ndtv\pojo\Clouds.java
 C:\Users\91965\eclipse-workspace\AutonomousWorkbook\Framework\src\test\java\com\ndtv\restAssured\ResponseToJavaObjectDeserialization.java
+C:\Users\91965\eclipse-workspace\AutonomousWorkbook\Framework\src\test\java\com\ndtv\util\ExcelUtil.java

@@ -34,22 +34,19 @@ public class Listeners implements ITestListener {
 
 	public void onTestFailure(ITestResult result) {
 
-		if (!PropertyFile.propKey("Browser").equalsIgnoreCase("API")) {
 			WebDriver driver = null;
 			CommonFunctions cf = new CommonFunctions();
 			test.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " FAILED ", ExtentColor.RED));
 			test.fail(result.getThrowable());
 			try {
 				String methodName = result.getMethod().getMethodName();
+				if (!PropertyFile.propKey("API").equalsIgnoreCase("true"))
+				{
 				driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
 				cf.screenShot(methodName, driver);
+				}
 			} catch (Exception e) {
 				e.printStackTrace();
-			}
-		}
-		else
-		{
-			test.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " FAILED ", ExtentColor.RED));
 		}
 	}
 

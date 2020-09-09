@@ -3,11 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ndtv.restAssured.ResponseToJavaObjectDeserialization">
+      <class name="com.ndtv.testcases.WebApplicationTestCases">
         <methods>
-          <include name="deserialization"/>
+          <include name="validateCityOnMap"/>
+          <include name="initializeBrowserDriver"/>
+          <include name="navigateToWeather"/>
+          <include name="captureTemp"/>
+          <include name="shutBrowser"/>
+          <include name="launchNDTV"/>
         </methods>
-      </class> <!-- com.ndtv.restAssured.ResponseToJavaObjectDeserialization -->
+      </class> <!-- com.ndtv.testcases.WebApplicationTestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

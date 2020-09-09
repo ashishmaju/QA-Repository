@@ -15,6 +15,7 @@ import com.ndtv.locators.PageLocators;
 import com.ndtv.pages.HomePage;
 import com.ndtv.pages.WeatherPage;
 import com.ndtv.propertiesFile.PropertyFile;
+import com.ndtv.util.TemperatureUtility;
 
 public class WebApplicationTestCases extends CommonFunctions {
 	public WebDriver driver;
@@ -61,6 +62,9 @@ public class WebApplicationTestCases extends CommonFunctions {
 		while (itr.hasNext()) {
 			al.add(itr.next().toString());
 		}
+		TemperatureUtility tu=new TemperatureUtility();
+		tu.extractTempFromWebApp(al);
+
 	}
 
 }
