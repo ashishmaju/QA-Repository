@@ -47,6 +47,10 @@ public class Listeners implements ITestListener {
 				e.printStackTrace();
 			}
 		}
+		else
+		{
+			test.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " FAILED ", ExtentColor.RED));
+		}
 	}
 
 	public void onTestSkipped(ITestResult result) {

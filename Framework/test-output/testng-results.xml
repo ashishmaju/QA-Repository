@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2701" started-at="2020-09-09T10:47:11Z" finished-at="2020-09-09T10:47:14Z">
+  <suite name="Suite" duration-ms="31589" started-at="2020-09-09T19:12:35Z" finished-at="2020-09-09T19:13:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2701" started-at="2020-09-09T10:47:11Z" finished-at="2020-09-09T10:47:14Z">
-      <class name="com.ndtv.restAssured.ResponseToJavaObjectDeserialization">
-        <test-method status="PASS" signature="deserialization()[pri:0, instance:com.ndtv.restAssured.ResponseToJavaObjectDeserialization@239963d8]" name="deserialization" duration-ms="2651" started-at="2020-09-09T10:47:11Z" finished-at="2020-09-09T10:47:14Z">
+    <test name="WebApplicationTest" duration-ms="28750" started-at="2020-09-09T19:12:35Z" finished-at="2020-09-09T19:13:04Z">
+      <class name="com.ndtv.testcases.WebApplicationTestCases">
+        <test-method status="PASS" signature="initializeBrowserDriver()[pri:0, instance:com.ndtv.testcases.WebApplicationTestCases@ed7f8b4]" name="initializeBrowserDriver" is-config="true" duration-ms="7651" started-at="2020-09-09T19:12:35Z" finished-at="2020-09-09T19:12:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deserialization -->
+        </test-method> <!-- initializeBrowserDriver -->
+        <test-method status="PASS" signature="launchNDTV()[pri:0, instance:com.ndtv.testcases.WebApplicationTestCases@ed7f8b4]" name="launchNDTV" duration-ms="13067" started-at="2020-09-09T19:12:43Z" finished-at="2020-09-09T19:12:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchNDTV -->
+        <test-method status="PASS" signature="navigateToWeather()[pri:0, instance:com.ndtv.testcases.WebApplicationTestCases@ed7f8b4]" name="navigateToWeather" duration-ms="2783" started-at="2020-09-09T19:12:56Z" depends-on-methods="com.ndtv.testcases.WebApplicationTestCases.launchNDTV" finished-at="2020-09-09T19:12:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToWeather -->
+        <test-method status="PASS" signature="validateCityOnMap()[pri:0, instance:com.ndtv.testcases.WebApplicationTestCases@ed7f8b4]" name="validateCityOnMap" duration-ms="3432" started-at="2020-09-09T19:12:59Z" depends-on-methods="com.ndtv.testcases.WebApplicationTestCases.navigateToWeather" finished-at="2020-09-09T19:13:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCityOnMap -->
+        <test-method status="PASS" signature="captureTemp()[pri:0, instance:com.ndtv.testcases.WebApplicationTestCases@ed7f8b4]" name="captureTemp" duration-ms="577" started-at="2020-09-09T19:13:02Z" depends-on-methods="com.ndtv.testcases.WebApplicationTestCases.validateCityOnMap" finished-at="2020-09-09T19:13:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureTemp -->
+        <test-method status="PASS" signature="shutBrowser()[pri:0, instance:com.ndtv.testcases.WebApplicationTestCases@ed7f8b4]" name="shutBrowser" is-config="true" duration-ms="1166" started-at="2020-09-09T19:13:03Z" finished-at="2020-09-09T19:13:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutBrowser -->
+      </class> <!-- com.ndtv.testcases.WebApplicationTestCases -->
+    </test> <!-- WebApplicationTest -->
+    <test name="APITest" duration-ms="2512" started-at="2020-09-09T19:13:04Z" finished-at="2020-09-09T19:13:07Z">
+      <class name="com.ndtv.restAssured.ResponseToJavaObjectDeserialization">
+        <test-method status="PASS" signature="weatherJsonResponse()[pri:0, instance:com.ndtv.restAssured.ResponseToJavaObjectDeserialization@6a03bcb1]" name="weatherJsonResponse" duration-ms="2487" started-at="2020-09-09T19:13:04Z" finished-at="2020-09-09T19:13:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- weatherJsonResponse -->
       </class> <!-- com.ndtv.restAssured.ResponseToJavaObjectDeserialization -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- APITest -->
+  </suite> <!-- Suite -->
 </testng-results>

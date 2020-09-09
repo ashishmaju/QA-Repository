@@ -11,10 +11,9 @@ import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
 
 public class ResponseToJavaObjectDeserialization {
+	
 	@Test
-	public void deserialization() {
-		System.out.println();
-
+	public void weatherJsonResponse() {
 		RestAssured.baseURI = PropertyFile.propKey("URI");
 		RequestSpecification httpRequest = RestAssured.given().queryParam("q", PropertyFile.propKey("CityName"))
 				.queryParam("appid", PropertyFile.propKey("AccessKey"));
