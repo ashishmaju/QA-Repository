@@ -60,7 +60,4 @@ public class Main
 		this.grnd_level = grnd_level;
 	}
 
-	
-	
-
 }

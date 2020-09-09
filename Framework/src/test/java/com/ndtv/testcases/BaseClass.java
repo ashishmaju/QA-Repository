@@ -11,7 +11,6 @@ import com.ndtv.propertiesFile.PropertyFile;
 public class BaseClass
 {
 	public static WebDriver driver=null;
-	
 	@SuppressWarnings("deprecation")
 	public static WebDriver initDriver()
 	{
@@ -32,7 +31,4 @@ public class BaseClass
 	{
 		driver.close();
 	}
-
-	
-	
 }

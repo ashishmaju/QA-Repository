@@ -16,9 +16,5 @@ public class Wind
 	public void setDeg(float deg) {
 		this.deg = deg;
 	}
-	
-
-	
-	
 
 }

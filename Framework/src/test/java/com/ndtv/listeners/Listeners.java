@@ -15,65 +15,54 @@ import com.ndtv.keywords.CommonFunctions;
 import com.ndtv.propertiesFile.PropertyFile;
 import com.ndtv.util.Report;
 
-public class Listeners implements ITestListener{
+public class Listeners implements ITestListener {
 	public ExtentTest test;
-	Report extent=new Report();
-	ExtentReports reports=extent.extentReportsConfiguration();
-	
+	Report extent = new Report();
+	ExtentReports reports = extent.extentReportsConfiguration();
+
 	public void onFinish(ITestContext arg0) {
 		reports.flush();
-		
 	}
 
 	public void onStart(ITestContext result) {
-		Report extent=new Report();
-		ExtentReports reports=extent.extentReportsConfiguration();
-		
-		
+		Report extent = new Report();
+		ExtentReports reports = extent.extentReportsConfiguration();
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult arg0) {
-		// TODO Auto-generated method stub
-		
 	}
 
 	public void onTestFailure(ITestResult result) {
-		
-		if(!PropertyFile.propKey("Browser").equalsIgnoreCase("API"))
-		{
-		WebDriver driver=null;
-		CommonFunctions cf=new CommonFunctions();
-		test.log(Status.FAIL, MarkupHelper.createLabel(result.getName()+" FAILED ", ExtentColor.RED));
-        test.fail(result.getThrowable());
-		try
-		{
-    	String methodName=result.getMethod().getMethodName();
-    	driver=(WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
-        cf.screenShot(methodName,driver);
-		}
-		catch(Exception e)
-		{
-			e.printStackTrace();
-		}
+
+		if (!PropertyFile.propKey("Browser").equalsIgnoreCase("API")) {
+			WebDriver driver = null;
+			CommonFunctions cf = new CommonFunctions();
+			test.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " FAILED ", ExtentColor.RED));
+			test.fail(result.getThrowable());
+			try {
+				String methodName = result.getMethod().getMethodName();
+				driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
+				cf.screenShot(methodName, driver);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 	}
 
 	public void onTestSkipped(ITestResult result) {
-		test.log(Status.SKIP, MarkupHelper.createLabel(result.getName()+" SKIPPED ", ExtentColor.ORANGE));
-        test.skip(result.getThrowable());
-		
+		test.log(Status.SKIP, MarkupHelper.createLabel(result.getName() + " SKIPPED ", ExtentColor.ORANGE));
+		test.skip(result.getThrowable());
+
 	}
 
 	public void onTestStart(ITestResult result) {
-	
-		test=reports.createTest(result.getMethod().getMethodName());
-		
+		test = reports.createTest(result.getMethod().getMethodName());
+
 	}
 
 	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
-		 test.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" PASSED ", ExtentColor.GREEN));
-		
+		test.log(Status.PASS, MarkupHelper.createLabel(result.getName() + " PASSED ", ExtentColor.GREEN));
+
 	}
 
 }

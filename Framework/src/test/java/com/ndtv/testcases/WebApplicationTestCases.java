@@ -15,55 +15,48 @@ import com.ndtv.pages.HomePage;
 import com.ndtv.pages.WeatherPage;
 import com.ndtv.propertiesFile.PropertyFile;
 
-public class WebApplicationTestCases extends CommonFunctions
-{
+public class WebApplicationTestCases extends CommonFunctions {
 	public WebDriver driver;
 	public WeatherPage wp;
-	CommonFunctions cf=new CommonFunctions();
-	
+	CommonFunctions cf = new CommonFunctions();
+
 	@BeforeTest
-	public void initializeBrowserDriver()
-	{
-		driver=BaseClass.initDriver();
+	public void initializeBrowserDriver() {
+		driver = BaseClass.initDriver();
 	}
-	
+
 	@Test
 	public void launchNDTV() throws IOException {
 		driver.get(PropertyFile.propKey("URL"));
 	}
-	
-	@Test(dependsOnMethods="launchNDTV")
-	public void navigateToWeather()
-	{
-		HomePage hp=PageFactory.initElements(driver, HomePage.class);
+
+	@Test(dependsOnMethods = "launchNDTV")
+	public void navigateToWeather() {
+		HomePage hp = PageFactory.initElements(driver, HomePage.class);
 		isDisplayed(hp.getMoreIconTab());
 		click(hp.getMoreIconTab());
 		isDisplayed(hp.getWeatherMenu());
 		click(hp.getWeatherMenu());
 	}
-	
-	@Test(dependsOnMethods="navigateToWeather")
-	public void validateCityOnMap() throws InterruptedException
-	{
-		wp=PageFactory.initElements(driver,WeatherPage.class);
-		
-		sendKeys(wp.getSearchbox(),PageLocators.cityName);
+
+	@Test(dependsOnMethods = "navigateToWeather")
+	public void validateCityOnMap() throws InterruptedException {
+		wp = PageFactory.initElements(driver, WeatherPage.class);
+		sendKeys(wp.getSearchbox(), PageLocators.cityName);
 		Thread.sleep(3000);
 		cf.jsClick(driver, wp.cityNameInChecklist());
 		isDisplayed(wp.getcityTemperature());
 		click(wp.getcityTemperature());
 	}
-	
-	@Test(dependsOnMethods="validateCityOnMap")
-	public void captureTemp() throws InterruptedException
-	{
-		wp=PageFactory.initElements(driver, WeatherPage.class);
-		
-		String city=getText(wp.leafletPopUpHeader());
+
+	@Test(dependsOnMethods = "validateCityOnMap")
+	public void captureTemp() throws InterruptedException {
+		wp = PageFactory.initElements(driver, WeatherPage.class);
+
+		String city = getText(wp.leafletPopUpHeader());
 		AssertJUnit.assertTrue(city.contains(PageLocators.cityName));
-		ListIterator<String> itr=wp.leafletPopUpTemp().listIterator();
-		while(itr.hasNext())
-		{
+		ListIterator<String> itr = wp.leafletPopUpTemp().listIterator();
+		while (itr.hasNext()) {
 			System.out.println(itr.next().toString());
 		}
 	}

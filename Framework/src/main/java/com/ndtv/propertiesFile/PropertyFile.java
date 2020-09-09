@@ -8,12 +8,12 @@ public class PropertyFile {
 	public static String propKey(String key) {
 		Properties prop = new Properties();
 		try {
-		
-			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\com\\ndtv\\propertiesFile\\Data.properties");
+
+			FileInputStream fis = new FileInputStream(
+					System.getProperty("user.dir") + "\\src\\main\\java\\com\\ndtv\\propertiesFile\\Data.properties");
 			prop.load(fis);
 			return prop.getProperty(key);
-		} 
-		catch (IOException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
 			System.err.println("Error in Loading Property File " + e.getLocalizedMessage());
 			return null;

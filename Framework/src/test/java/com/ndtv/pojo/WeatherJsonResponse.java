@@ -95,8 +95,5 @@ public class WeatherJsonResponse
 	public void setCod(int cod) {
 		this.cod = cod;
 	}
-	
-	
-
 
 }

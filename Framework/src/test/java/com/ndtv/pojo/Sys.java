@@ -24,6 +24,4 @@ public class Sys
 	public void setSunset(Double sunset) {
 		this.sunset = sunset;
 	}
-	
-
 }

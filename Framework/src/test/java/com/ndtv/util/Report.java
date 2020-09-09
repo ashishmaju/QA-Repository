@@ -7,7 +7,6 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class Report 
 {
-
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
 	public ExtentReports extentReportsConfiguration()
@@ -16,15 +15,11 @@ public class Report
 	htmlReporter=new ExtentHtmlReporter(path);
 	extent = new ExtentReports();
     extent.attachReporter(htmlReporter);
-   // extent.setSystemInfo("OS", OS);
-  //  extent.setSystemInfo("Browser", browser);
     htmlReporter.config().setChartVisibilityOnOpen(true);
     htmlReporter.config().setDocumentTitle("Extent Report Demo");
     htmlReporter.config().setReportName("Test Report");
     htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
-    htmlReporter.config().setTheme(Theme.STANDARD);
-    //htmlReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
-	
+    htmlReporter.config().setTheme(Theme.STANDARD);	
     return extent;
 	}
 
