@@ -4,8 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.testng.annotations.Parameters;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -16,7 +14,7 @@ import com.ndtv.propertiesFile.PropertyFile;
 import com.ndtv.util.Report;
 
 public class Listeners implements ITestListener {
-	public ExtentTest test;
+	public static ExtentTest test;
 	Report extent = new Report();
 	ExtentReports reports = extent.extentReportsConfiguration();
 
@@ -26,7 +24,7 @@ public class Listeners implements ITestListener {
 
 	public void onStart(ITestContext result) {
 		Report extent = new Report();
-		ExtentReports reports = extent.extentReportsConfiguration();
+		extent.extentReportsConfiguration();
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult arg0) {
@@ -53,17 +51,17 @@ public class Listeners implements ITestListener {
 	public void onTestSkipped(ITestResult result) {
 		test.log(Status.SKIP, MarkupHelper.createLabel(result.getName() + " SKIPPED ", ExtentColor.ORANGE));
 		test.skip(result.getThrowable());
-
 	}
 
 	public void onTestStart(ITestResult result) {
 		test = reports.createTest(result.getMethod().getMethodName());
-
 	}
 
 	public void onTestSuccess(ITestResult result) {
 		test.log(Status.PASS, MarkupHelper.createLabel(result.getName() + " PASSED ", ExtentColor.GREEN));
-
 	}
-
+	public ExtentTest getTest()
+	{
+		return test;
+	}
 }

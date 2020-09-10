@@ -1,14 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 41.534 sec <<< FAILURE! - in TestSuite
-tempComparator(com.ndtv.restAssured.ResponseToJavaObjectDeserialization)  Time elapsed: 0.009 sec  <<< FAILURE!
-java.lang.AssertionError: expected [Temperature in Kelvin from API response : 35.0 and Temperature in Kelvin from WebUI is 308.15] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:442)
-	at com.ndtv.util.TemperatureUtility.compareTemperature(TemperatureUtility.java:53)
-	at com.ndtv.restAssured.ResponseToJavaObjectDeserialization.tempComparator(ResponseToJavaObjectDeserialization.java:50)
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 34.718 sec <<< FAILURE! - in TestSuite
+tempComparatorOfWebUIandAPI(com.ndtv.testcases.ComparatorTestCase)  Time elapsed: 0.011 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	Temperature in Kelvin from API response : 302.06 and Temperature in Kelvin from WebUI is 308.15,
+	Humidity from API response : 54.0 and humidity from WebUI is 55.0
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.ndtv.util.TemperatureUtility.compareTemperature(TemperatureUtility.java:80)
+	at com.ndtv.testcases.ComparatorTestCase.tempComparatorOfWebUIandAPI(ComparatorTestCase.java:20)
+
+varianceCheck(com.ndtv.testcases.ComparatorTestCase)  Time elapsed: 1.216 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	Provided temperature 302.41 not mat the condition, Should be between minimum temp 302.06 and maximum temp 302.06
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.ndtv.testcases.ComparatorTestCase.varianceCheck(ComparatorTestCase.java:43)
 

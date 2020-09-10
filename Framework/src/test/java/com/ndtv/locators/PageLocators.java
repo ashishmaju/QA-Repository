@@ -14,5 +14,6 @@ public final static String cityTemperatureOnMap="//div[text()='Allahabad']";
 public final static String zoomButtonOnMap="//a[@title='Zoom in']";
 public final static String leafletPopUp="//div[@class='leaflet-popup-content']//span[contains(text(),'Allahabad')]";
 public final static String leafletPopUpTemp="//span[@class='heading']/b[text()]";
+public final static String tempContainer="(//div[@class='temperatureContainer'])[1]";
 
 }

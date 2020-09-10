@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="com.ndtv.listeners.Listeners"/>
   </listeners>
-  <test thread-count="5" name="APITest(failed)">
-    <parameter name="type" value="API"/>
+  <test thread-count="5" name="ComparatorAndVariance(failed)">
     <classes>
-      <class name="com.ndtv.restAssured.ResponseToJavaObjectDeserialization">
+      <class name="com.ndtv.testcases.ComparatorTestCase">
         <methods>
-          <include name="getResponseBody"/>
-          <include name="weatherJsonResponse"/>
+          <include name="tempComparatorOfWebUIandAPI"/>
+          <include name="shutBrowser"/>
+          <include name="varianceCheck"/>
         </methods>
-      </class> <!-- com.ndtv.restAssured.ResponseToJavaObjectDeserialization -->
+      </class> <!-- com.ndtv.testcases.ComparatorTestCase -->
     </classes>
-  </test> <!-- APITest(failed) -->
+  </test> <!-- ComparatorAndVariance(failed) -->
 </suite> <!-- Failed suite [Suite] -->

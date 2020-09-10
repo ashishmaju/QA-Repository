@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ndtv.restAssured.ResponseToJavaObjectDeserialization" hash-for-method="getResponseBody">getResponseBody</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ndtv.testcases.ComparatorTestCase" hash-for-method="tempComparatorOfWebUIandAPI">tempComparatorOfWebUIandAPI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ndtv.testcases.ComparatorTestCase" hash-for-method="varianceCheck">varianceCheck</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -117,6 +122,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ndtv.testcases.WebApplicationTestCases" hash-for-method="captureTemp">captureTemp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ndtv.testcases.APITestCases" hash-for-method="extractResponseBody">extractResponseBody</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -136,7 +146,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ndtv.restAssured.ResponseToJavaObjectDeserialization" hash-for-method="weatherJsonResponse">weatherJsonResponse</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ndtv.testcases.APITestCases" hash-for-method="weatherJsonResponse">weatherJsonResponse</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -154,18 +164,32 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.ndtv.restAssured.ResponseToJavaObjectDeserialization</span>
+              <span class="class-name">com.ndtv.testcases.ComparatorTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getResponseBody">
-                  </a> <!-- getResponseBody -->
-                  <span class="method-name">getResponseBody</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at com.ndtv.util.TemperatureUtility.extractTempFromAPI(TemperatureUtility.java:69)
-	at com.ndtv.restAssured.ResponseToJavaObjectDeserialization.getResponseBody(ResponseToJavaObjectDeserialization.java:43)
-... Removed 27 stack frames
+                  <a name="tempComparatorOfWebUIandAPI">
+                  </a> <!-- tempComparatorOfWebUIandAPI -->
+                  <span class="method-name">tempComparatorOfWebUIandAPI</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Temperature in Kelvin from API response : 302.06 and Temperature in Kelvin from WebUI is 308.15,
+	Humidity from API response : 54.0 and humidity from WebUI is 55.0
+	at com.ndtv.util.TemperatureUtility.compareTemperature(TemperatureUtility.java:80)
+	at com.ndtv.testcases.ComparatorTestCase.tempComparatorOfWebUIandAPI(ComparatorTestCase.java:20)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="varianceCheck">
+                  </a> <!-- varianceCheck -->
+                  <span class="method-name">varianceCheck</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Provided temperature 302.41 not mat the condition, Should be between minimum temp 302.06 and maximum temp 302.06
+	at com.ndtv.testcases.ComparatorTestCase.varianceCheck(ComparatorTestCase.java:43)
+... Removed 26 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -210,9 +234,16 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.ndtv.restAssured.ResponseToJavaObjectDeserialization</span>
+              <span class="class-name">com.ndtv.testcases.APITestCases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="extractResponseBody">
+                  </a> <!-- extractResponseBody -->
+                  <span class="method-name">extractResponseBody</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="weatherJsonResponse">
@@ -243,9 +274,14 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;APITest&quot;&gt;
     &lt;parameter name=&quot;type&quot; value=&quot;API&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.ndtv.restAssured.ResponseToJavaObjectDeserialization&quot;/&gt;
+      &lt;class name=&quot;com.ndtv.testcases.APITestCases&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- APITest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ComparatorAndVariance&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ndtv.testcases.ComparatorTestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ComparatorAndVariance --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -261,6 +297,9 @@
               </li>
               <li>
                 <span class="test-name">APITest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ComparatorAndVariance (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -286,36 +325,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'navigateToWeather')
 data.setCell(0, 2, 'com.ndtv.testcases.WebApplicationTestCases')
-data.setCell(0, 3, 22534);
+data.setCell(0, 3, 7186);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'launchNDTV')
 data.setCell(1, 2, 'com.ndtv.testcases.WebApplicationTestCases')
-data.setCell(1, 3, 8250);
+data.setCell(1, 3, 6881);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'weatherJsonResponse')
-data.setCell(2, 2, 'com.ndtv.restAssured.ResponseToJavaObjectDeserialization')
-data.setCell(2, 3, 2330);
+data.setCell(2, 2, 'com.ndtv.testcases.APITestCases')
+data.setCell(2, 3, 2293);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateCityOnMap')
-data.setCell(3, 2, 'com.ndtv.testcases.WebApplicationTestCases')
-data.setCell(3, 3, 1345);
+data.setCell(3, 1, 'varianceCheck')
+data.setCell(3, 2, 'com.ndtv.testcases.ComparatorTestCase')
+data.setCell(3, 3, 968);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'captureTemp')
+data.setCell(4, 1, 'validateCityOnMap')
 data.setCell(4, 2, 'com.ndtv.testcases.WebApplicationTestCases')
-data.setCell(4, 3, 308);
+data.setCell(4, 3, 686);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'getResponseBody')
-data.setCell(5, 2, 'com.ndtv.restAssured.ResponseToJavaObjectDeserialization')
-data.setCell(5, 3, 6);
+data.setCell(5, 1, 'captureTemp')
+data.setCell(5, 2, 'com.ndtv.testcases.WebApplicationTestCases')
+data.setCell(5, 3, 564);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'tempComparatorOfWebUIandAPI')
+data.setCell(6, 2, 'com.ndtv.testcases.ComparatorTestCase')
+data.setCell(6, 3, 16);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'extractResponseBody')
+data.setCell(7, 2, 'com.ndtv.testcases.APITestCases')
+data.setCell(7, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -348,37 +395,54 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">launchNDTV</span>
-                <span class="method-start">6918 ms</span>
+                <span class="method-start">7677 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">navigateToWeather</span>
-                <span class="method-start">15190 ms</span>
+                <span class="method-start">14568 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateCityOnMap</span>
-                <span class="method-start">37726 ms</span>
+                <span class="method-start">21755 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">captureTemp</span>
-                <span class="method-start">39074 ms</span>
+                <span class="method-start">22441 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">shutBrowser</span>
-                <span class="method-start">39383 ms</span>
+                <span class="method-start">23005 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.ndtv.restAssured.ResponseToJavaObjectDeserialization</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.ndtv.testcases.APITestCases</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">weatherJsonResponse</span>
-                <span class="method-start">40604 ms</span>
+                <span class="method-start">24475 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">extractResponseBody</span>
+                <span class="method-start">26768 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ndtv.testcases.ComparatorTestCase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tempComparatorOfWebUIandAPI</span>
+                <span class="method-start">26939 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">getResponseBody</span>
-                <span class="method-start">42940 ms</span>
+                <span class="method-name">varianceCheck</span>
+                <span class="method-start">26971 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">shutBrowser</span>
+                <span class="method-start">27939 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

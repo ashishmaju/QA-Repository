@@ -15,7 +15,7 @@
 
 		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
 	
-	<title>Extent Report Demo</title>
+	<title>Coding Assignment</title>
 
 	<style type='text/css'>
 	</style>
@@ -38,7 +38,7 @@
 		</ul>
 
 		<!-- report name -->
-		<span class='report-name'>Test Report</span>
+		<span class='report-name'>Assignment Report</span>
 		
 		<!-- report headline -->
 		<span class='report-headline'></span>
@@ -47,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Sep 10, 2020 03:28:01 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Sep 11, 2020 01:48:37 AM</span>
 				</a>
 			</li>
 			<li>
@@ -74,7 +74,6 @@
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -125,10 +124,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>6</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -140,10 +139,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='14.286%'><span class='strong'>1</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='80%'><span class='strong'>28</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='28.571%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='57.143%'>4</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='20%'>7</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -161,14 +160,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>launchNDTV</span>
-						<span class='test-time'>Sep 10, 2020 03:28:08 AM</span>
+						<span class='test-time'>Sep 11, 2020 01:48:45 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 10, 2020 03:28:08 AM</span>
-	<span class='label end-time'>Sep 10, 2020 03:28:09 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+440ms</span>
+	<span class='label start-time'>Sep 11, 2020 01:48:45 AM</span>
+	<span class='label end-time'>Sep 11, 2020 01:48:52 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+846ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -182,7 +181,12 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:28:09 AM</td>
+					<td class='timestamp'>1:48:52 AM</td>
+					<td class='step-details'>Navigated to https://www.ndtv.com/</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:48:52 AM</td>
 					<td class='step-details'><span class='label white-text green'>launchNDTV PASSED </span></td>
 				</tr>
 			</tbody>
@@ -192,17 +196,292 @@
 				</li>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>navigateToWeather</span>
-						<span class='test-time'>Sep 10, 2020 03:28:09 AM</span>
+						<span class='test-time'>Sep 11, 2020 01:48:52 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 11, 2020 01:48:52 AM</span>
+	<span class='label end-time'>Sep 11, 2020 01:48:59 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+185ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:48:53 AM</td>
+					<td class='step-details'>[[ChromeDriver: chrome on WINDOWS (c5a8fead079e5d5558bd8af51790bcd1)] -> id: h_sub_menu]is present on page</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:48:53 AM</td>
+					<td class='step-details'>[[ChromeDriver: chrome on WINDOWS (c5a8fead079e5d5558bd8af51790bcd1)] -> id: h_sub_menu]is present on page</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:48:53 AM</td>
+					<td class='step-details'>Element [[ChromeDriver: chrome on WINDOWS (c5a8fead079e5d5558bd8af51790bcd1)] -> id: h_sub_menu]is clicked sucessfully</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:48:53 AM</td>
+					<td class='step-details'>[[ChromeDriver: chrome on WINDOWS (c5a8fead079e5d5558bd8af51790bcd1)] -> link text: WEATHER]is present on the page</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:48:54 AM</td>
+					<td class='step-details'>[[ChromeDriver: chrome on WINDOWS (c5a8fead079e5d5558bd8af51790bcd1)] -> link text: WEATHER]is present on page</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:48:59 AM</td>
+					<td class='step-details'>Element Proxy element for: DefaultElementLocator 'By.linkText: WEATHER'is clicked sucessfully</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:48:59 AM</td>
+					<td class='step-details'><span class='label white-text green'>navigateToWeather PASSED </span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>validateCityOnMap</span>
+						<span class='test-time'>Sep 11, 2020 01:48:59 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 11, 2020 01:48:59 AM</span>
+	<span class='label end-time'>Sep 11, 2020 01:49:00 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+685ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:48:59 AM</td>
+					<td class='step-details'>[[ChromeDriver: chrome on WINDOWS (c5a8fead079e5d5558bd8af51790bcd1)] -> xpath: (//div[@class='temperatureContainer'])[1]]is present on page</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:48:59 AM</td>
+					<td class='step-details'>[[ChromeDriver: chrome on WINDOWS (c5a8fead079e5d5558bd8af51790bcd1)] -> id: searchBox]is present on page</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:48:59 AM</td>
+					<td class='step-details'>Element [[ChromeDriver: chrome on WINDOWS (c5a8fead079e5d5558bd8af51790bcd1)] -> id: searchBox]is entered with value Allahabad sucessfully</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:48:59 AM</td>
+					<td class='step-details'>[[ChromeDriver: chrome on WINDOWS (c5a8fead079e5d5558bd8af51790bcd1)] -> xpath: //div[@class='messages']//input[@id='Allahabad']]is present on page</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:48:59 AM</td>
+					<td class='step-details'>[[ChromeDriver: chrome on WINDOWS (c5a8fead079e5d5558bd8af51790bcd1)] -> xpath: //div[@class='messages']//input[@id='Allahabad']]is clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:00 AM</td>
+					<td class='step-details'>[[ChromeDriver: chrome on WINDOWS (c5a8fead079e5d5558bd8af51790bcd1)] -> xpath: //div[text()='Allahabad']]is present on the page</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:00 AM</td>
+					<td class='step-details'>[[ChromeDriver: chrome on WINDOWS (c5a8fead079e5d5558bd8af51790bcd1)] -> xpath: //div[text()='Allahabad']]is present on page</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:00 AM</td>
+					<td class='step-details'>Element [[ChromeDriver: chrome on WINDOWS (c5a8fead079e5d5558bd8af51790bcd1)] -> xpath: //div[text()='Allahabad']]is clicked sucessfully</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:00 AM</td>
+					<td class='step-details'><span class='label white-text green'>validateCityOnMap PASSED </span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>captureTemp</span>
+						<span class='test-time'>Sep 11, 2020 01:49:00 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 11, 2020 01:49:00 AM</span>
+	<span class='label end-time'>Sep 11, 2020 01:49:00 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+564ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:00 AM</td>
+					<td class='step-details'>[[ChromeDriver: chrome on WINDOWS (c5a8fead079e5d5558bd8af51790bcd1)] -> xpath: //div[@class='leaflet-popup-content']//span[contains(text(),'Allahabad')]]is present on page</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:00 AM</td>
+					<td class='step-details'>Element [[ChromeDriver: chrome on WINDOWS (c5a8fead079e5d5558bd8af51790bcd1)] -> xpath: //div[@class='leaflet-popup-content']//span[contains(text(),'Allahabad')]] have value Allahabad, Uttar Pradesh on the screen</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:00 AM</td>
+					<td class='step-details'><span class='label white-text green'>captureTemp PASSED </span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>weatherJsonResponse</span>
+						<span class='test-time'>Sep 11, 2020 01:49:02 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 11, 2020 01:49:02 AM</span>
+	<span class='label end-time'>Sep 11, 2020 01:49:04 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+293ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:04 AM</td>
+					<td class='step-details'>Identifier {"coord":{"lon":81.85,"lat":25.45},"weather":[{"id":804,"main":"Clouds","description":"overcast clouds","icon":"04n"}],"base":"stations","main":{"temp":302.06,"feels_like":303.98,"temp_min":302.06,"temp_max":302.06,"pressure":1000,"humidity":54,"sea_level":1000,"grnd_level":989},"visibility":10000,"wind":{"speed":1.65,"deg":270},"clouds":{"all":85},"dt":1599768456,"sys":{"country":"IN","sunrise":1599783428,"sunset":1599828095},"timezone":19800,"id":1278994,"name":"Allahabad","cod":200}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:04 AM</td>
+					<td class='step-details'><span class='label white-text green'>weatherJsonResponse PASSED </span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>extractResponseBody</span>
+						<span class='test-time'>Sep 11, 2020 01:49:04 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 11, 2020 01:49:04 AM</span>
+	<span class='label end-time'>Sep 11, 2020 01:49:04 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+15ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:04 AM</td>
+					<td class='step-details'>Temperature in JSON response : 302.06</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:04 AM</td>
+					<td class='step-details'>Humidity in JSON response : 54.0</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:04 AM</td>
+					<td class='step-details'>Minimum temperature in JSON response : 302.06</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:04 AM</td>
+					<td class='step-details'>Maximum temperature in JSON response : 302.06</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:04 AM</td>
+					<td class='step-details'><span class='label white-text green'>extractResponseBody PASSED </span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>tempComparatorOfWebUIandAPI</span>
+						<span class='test-time'>Sep 11, 2020 01:49:04 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 10, 2020 03:28:09 AM</span>
-	<span class='label end-time'>Sep 10, 2020 03:28:15 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+664ms</span>
+	<span class='label start-time'>Sep 11, 2020 01:49:04 AM</span>
+	<span class='label end-time'>Sep 11, 2020 01:49:04 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+32ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -216,26 +495,28 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>3:28:15 AM</td>
-					<td class='step-details'><span class='label white-text red'>navigateToWeather FAILED </span></td>
+					<td class='timestamp'>1:49:04 AM</td>
+					<td class='step-details'>Temperature in Kelvin from API response : 302.06 and Temperature in Kelvin from WebUI is 308.15</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>3:28:15 AM</td>
-					<td class='step-details'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=h_sub_menu
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-GIJ7VPF', ip: '192.168.43.78', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)
-	at com.ndtv.keywords.CommonFunctions.isDisplayed(CommonFunctions.java:35)
-	at com.ndtv.testcases.WebApplicationTestCases.navigateToWeather(WebApplicationTestCases.java:38)
+					<td class='timestamp'>1:49:04 AM</td>
+					<td class='step-details'>Humidity from API response : 54.0 and humidity from WebUI is 55.0</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>1:49:04 AM</td>
+					<td class='step-details'><span class='label white-text red'>tempComparatorOfWebUIandAPI FAILED </span></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>1:49:04 AM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: The following asserts failed:
+	Temperature in Kelvin from API response : 302.06 and Temperature in Kelvin from WebUI is 308.15,
+	Humidity from API response : 54.0 and humidity from WebUI is 55.0
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.ndtv.util.TemperatureUtility.compareTemperature(TemperatureUtility.java:80)
+	at com.ndtv.testcases.ComparatorTestCase.tempComparatorOfWebUIandAPI(ComparatorTestCase.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -263,45 +544,60 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></td>
 				</tr>
-				<tr class='log' status='skip'>
-					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>3:28:15 AM</td>
-					<td class='step-details'><span class='label white-text orange'>validateCityOnMap SKIPPED </span></td>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>varianceCheck</span>
+						<span class='test-time'>Sep 11, 2020 01:49:04 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 11, 2020 01:49:04 AM</span>
+	<span class='label end-time'>Sep 11, 2020 01:49:05 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+953ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
 				</tr>
-				<tr class='log' status='skip'>
-					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>3:28:15 AM</td>
-					<td class='step-details'><pre>java.lang.Throwable: Method WebApplicationTestCases.validateCityOnMap()[pri:0, instance:com.ndtv.testcases.WebApplicationTestCases@38102d01] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-</pre></td>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>1:49:05 AM</td>
+					<td class='step-details'>Provided temperature 302.41 not mat the condition, Should be between minimum temp 302.06 and maximum temp 302.06</td>
 				</tr>
-				<tr class='log' status='skip'>
-					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>3:28:15 AM</td>
-					<td class='step-details'><span class='label white-text orange'>captureTemp SKIPPED </span></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>1:49:05 AM</td>
+					<td class='step-details'><span class='label white-text red'>varianceCheck FAILED </span></td>
 				</tr>
-				<tr class='log' status='skip'>
-					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>3:28:15 AM</td>
-					<td class='step-details'><pre>java.lang.Throwable: Method WebApplicationTestCases.captureTemp()[pri:0, instance:com.ndtv.testcases.WebApplicationTestCases@38102d01] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>1:49:05 AM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: The following asserts failed:
+	Provided temperature 302.41 not mat the condition, Should be between minimum temp 302.06 and maximum temp 302.06
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.ndtv.testcases.ComparatorTestCase.varianceCheck(ComparatorTestCase.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -379,8 +675,8 @@ Driver info: driver.version: RemoteWebDriver
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                                <span class='exception-name'>java.lang.AssertionError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -394,22 +690,14 @@ Driver info: driver.version: RemoteWebDriver
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Sep 10, 2020 03:28:09 AM</td>
-                                                        <td class='linked' test-id='2'>navigateToWeather</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=h_sub_menu
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-GIJ7VPF', ip: '192.168.43.78', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)
-	at com.ndtv.keywords.CommonFunctions.isDisplayed(CommonFunctions.java:35)
-	at com.ndtv.testcases.WebApplicationTestCases.navigateToWeather(WebApplicationTestCases.java:38)
+                                                        <td>Sep 11, 2020 01:49:04 AM</td>
+                                                        <td class='linked' test-id='7'>tempComparatorOfWebUIandAPI</td>
+                                                        <td><pre><pre>java.lang.AssertionError: The following asserts failed:
+	Temperature in Kelvin from API response : 302.06 and Temperature in Kelvin from WebUI is 308.15,
+	Humidity from API response : 54.0 and humidity from WebUI is 55.0
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.ndtv.util.TemperatureUtility.compareTemperature(TemperatureUtility.java:80)
+	at com.ndtv.testcases.ComparatorTestCase.tempComparatorOfWebUIandAPI(ComparatorTestCase.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -437,56 +725,21 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></pre></td>
                                                     </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>java.lang.Throwable</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
                                                     <tr>
-                                                        <td>Sep 10, 2020 03:28:09 AM</td>
-                                                        <td class='linked' test-id='2'>navigateToWeather</td>
-                                                        <td><pre><pre>java.lang.Throwable: Method WebApplicationTestCases.validateCityOnMap()[pri:0, instance:com.ndtv.testcases.WebApplicationTestCases@38102d01] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Sep 10, 2020 03:28:09 AM</td>
-                                                        <td class='linked' test-id='2'>navigateToWeather</td>
-                                                        <td><pre><pre>java.lang.Throwable: Method WebApplicationTestCases.captureTemp()[pri:0, instance:com.ndtv.testcases.WebApplicationTestCases@38102d01] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+                                                        <td>Sep 11, 2020 01:49:04 AM</td>
+                                                        <td class='linked' test-id='8'>varianceCheck</td>
+                                                        <td><pre><pre>java.lang.AssertionError: The following asserts failed:
+	Provided temperature 302.41 not mat the condition, Should be between minimum temp 302.06 and maximum temp 302.06
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.ndtv.testcases.ComparatorTestCase.varianceCheck(ComparatorTestCase.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -530,31 +783,31 @@ Driver info: driver.version: RemoteWebDriver
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>35</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 10, 2020 03:28:01 AM</div>
+					<div class='panel-lead'>Sep 11, 2020 01:48:37 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 10, 2020 03:28:16 AM</div>
+			 		<div class='panel-lead'>Sep 11, 2020 01:49:05 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 15s+345ms</div>
+					<div class='panel-lead'>0h 0m 28s+486ms</div>
 				</div>
 			</div>
 		</div>
@@ -567,22 +820,22 @@ Driver info: driver.version: RemoteWebDriver
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 1,
+				passParent: 6,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 2,
 				
-				passChild: 1,
-				failChild: 2,
+				passChild: 28,
+				failChild: 7,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 4,
+				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 6,
+				exceptionsChild: 7,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,
