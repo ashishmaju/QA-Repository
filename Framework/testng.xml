@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-<listeners>
-<listener class-name="com.ndtv.listeners.Listeners"/>
-</listeners>
-  <test name="WebApplicationTest">
-    <classes>
-     <class name="com.ndtv.testcases.WebApplicationTestCases"/> 
-    </classes>
-    </test>
-    <test name="APITest">
-    <parameter name="type" value="API"/>
-    <classes>
-    	 <class name="com.ndtv.restAssured.ResponseToJavaObjectDeserialization"/> 
-    </classes>
-    </test>
+	<listeners>
+		<listener class-name="com.ndtv.listeners.Listeners" />
+	</listeners>
+	
+	<test name="WebApplicationTest">
+	<classes>
+		<class name="com.ndtv.testcases.WebApplicationTestCases" />
+	</classes>
+	</test>
+	<test name="APITest">
+		<parameter name="type" value="API" />
+		<classes>
+			<class name="com.ndtv.testcases.APITestCases" />
+		</classes>
+	</test>
+	<test name="ComparatorAndVariance">
+		<classes>
+			<class name="com.ndtv.testcases.ComparatorTestCase" />
+		</classes>
+	</test>
 </suite> <!-- Suite -->

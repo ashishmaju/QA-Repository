@@ -21,8 +21,9 @@ public class WeatherPage
 	@FindBy(xpath=PageLocators.cityTemperatureOnMap) WebElement cityTemperature;
 	@FindBy(xpath=PageLocators.zoomButtonOnMap) WebElement zoomButton;
 	@FindBy(xpath=PageLocators.leafletPopUp) WebElement leafletPopUp;
+	@FindBy(xpath=PageLocators.tempContainer) WebElement tempContainer;
 	@FindBy(xpath=PageLocators.leafletPopUpTemp) List<WebElement> leafletPopUpTemp;
-	
+
 	public WebElement getSearchbox() {
 		return searchbox;
 	}
@@ -53,5 +54,9 @@ public class WeatherPage
 			al.add(leafletPopUpTemp.get(i).getText());
 		}
 		return al;
+	}
+	public WebElement tempContainer()
+	{
+		return tempContainer;
 	}
 }
