@@ -96,7 +96,7 @@ public class CommonFunctions extends BaseClass {
 		try {
 			TakesScreenshot scrnshot = (TakesScreenshot) driver;
 			File source = scrnshot.getScreenshotAs(OutputType.FILE);
-			String destination = System.getProperty("user.dir") + "\\Screenshots\\" + testCaseName + ".png";
+			String destination = System.getProperty("user.dir") + "/Screenshots/" + testCaseName + ".png";
 			File dest = new File(destination);
 			FileUtils.copyFile(source, dest);
 		} catch (Exception e) {

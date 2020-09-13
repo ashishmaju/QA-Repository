@@ -11,7 +11,7 @@ public class PropertyFile {
 		try {
 
 			FileInputStream fis = new FileInputStream(
-					System.getProperty("user.dir") + "\\src\\main\\java\\com\\ndtv\\propertiesFile\\Data.properties");
+					System.getProperty("user.dir") + "/src/main/java/com/ndtv/propertiesFile/Data.properties");
 			prop.load(fis);
 			return prop.getProperty(key);
 		} catch (IOException e) {
