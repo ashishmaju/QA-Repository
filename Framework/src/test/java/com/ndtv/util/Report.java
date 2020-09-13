@@ -11,7 +11,7 @@ public class Report
 	public static ExtentReports extent;
 	public ExtentReports extentReportsConfiguration()
 	{	
-	String path=System.getProperty("user.dir")+"\\result\\ExecutionResults.html";
+	String path=System.getProperty("user.dir")+"/result/ExecutionResults.html";
 	htmlReporter=new ExtentHtmlReporter(path);
 	extent = new ExtentReports();
     extent.attachReporter(htmlReporter);

@@ -19,7 +19,7 @@ public class ExcelUtil {
 		ArrayList<String> al = new ArrayList<String>();
 		try {
 			FileInputStream fis = new FileInputStream(
-					System.getProperty("user.dir") + "\\src\\main\\java\\com\\ndtv\\resources\\TestData.xlsx");
+					System.getProperty("user.dir") + "/src/main/java/com/ndtv/resources/TestData.xlsx");
 			@SuppressWarnings("resource")
 			XSSFWorkbook workbook = new XSSFWorkbook(fis);
 			int numOfSheets = workbook.getNumberOfSheets(); 						// num of sheet present in workbook
