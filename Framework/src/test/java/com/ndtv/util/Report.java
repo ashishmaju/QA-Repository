@@ -15,6 +15,7 @@ public class Report
 	htmlReporter=new ExtentHtmlReporter(path);
 	extent = new ExtentReports();
     extent.attachReporter(htmlReporter);
+    htmlReporter.loadConfig(System.getProperty("user.dir")+"/extent-config.xml");
     htmlReporter.config().setChartVisibilityOnOpen(true);
     htmlReporter.config().setDocumentTitle("Coding Assignment");
     htmlReporter.config().setReportName("Assignment Report");

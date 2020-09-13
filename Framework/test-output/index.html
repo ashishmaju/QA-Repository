@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 2 failed,  2 skipped,  4 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,34 +102,10 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ndtv.testcases.WebApplicationTestCases" hash-for-method="navigateToWeather">navigateToWeather</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ndtv.testcases.ComparatorTestCase" hash-for-method="tempComparatorOfWebUIandAPI">tempComparatorOfWebUIandAPI</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ndtv.testcases.WebApplicationTestCases" hash-for-method="captureTemp">captureTemp</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ndtv.testcases.WebApplicationTestCases" hash-for-method="validateCityOnMap">validateCityOnMap</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -140,12 +116,27 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ndtv.testcases.WebApplicationTestCases" hash-for-method="captureTemp">captureTemp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ndtv.testcases.APITestCases" hash-for-method="extractResponseBody">extractResponseBody</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ndtv.testcases.WebApplicationTestCases" hash-for-method="launchNDTV">launchNDTV</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ndtv.testcases.WebApplicationTestCases" hash-for-method="navigateToWeather">navigateToWeather</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ndtv.testcases.WebApplicationTestCases" hash-for-method="validateCityOnMap">validateCityOnMap</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -173,42 +164,6 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.ndtv.testcases.WebApplicationTestCases</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="navigateToWeather">
-                  </a> <!-- navigateToWeather -->
-                  <span class="method-name">navigateToWeather</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;javascript:void(0)&quot; id=&quot;h_sub_menu&quot; class=&quot;topnavmore&quot;&gt;&lt;/a&gt; is not clickable at point (871, 60). Other element would receive the click: &lt;div class=&quot;noti_bgstyle&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=85.0.4183.102)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-GIJ7VPF&apos;, ip: &apos;192.168.43.78&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\91965\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54967}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b9bf6f4f37ccdb09024022ee4e2834b1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at com.ndtv.keywords.CommonFunctions.click(CommonFunctions.java:67)
-	at com.ndtv.testcases.WebApplicationTestCases.navigateToWeather(WebApplicationTestCases.java:42)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">com.ndtv.testcases.ComparatorTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -217,43 +172,17 @@ Session ID: b9bf6f4f37ccdb09024022ee4e2834b1
                   <a name="tempComparatorOfWebUIandAPI">
                   </a> <!-- tempComparatorOfWebUIandAPI -->
                   <span class="method-name">tempComparatorOfWebUIandAPI</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.ndtv.util.TemperatureUtility.compareTemperature(TemperatureUtility.java:59)
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Temperature in Kelvin from API response : 302.49 and Temperature in Kelvin from WebUI is 303.15,
+	Humidity from API response : 66.0 and humidity from WebUI is 79.0
+	at com.ndtv.util.TemperatureUtility.compareTemperature(TemperatureUtility.java:80)
 	at com.ndtv.testcases.ComparatorTestCase.tempComparatorOfWebUIandAPI(ComparatorTestCase.java:20)
-... Removed 25 stack frames
+... Removed 26 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.ndtv.testcases.WebApplicationTestCases</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="captureTemp">
-                  </a> <!-- captureTemp -->
-                  <span class="method-name">captureTemp</span>
-                  <div class="stack-trace">java.lang.Throwable: Method WebApplicationTestCases.captureTemp()[pri:0, instance:com.ndtv.testcases.WebApplicationTestCases@24a35978] depends on not successfully finished methods
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateCityOnMap">
-                  </a> <!-- validateCityOnMap -->
-                  <span class="method-name">validateCityOnMap</span>
-                  <div class="stack-trace">java.lang.Throwable: Method WebApplicationTestCases.validateCityOnMap()[pri:0, instance:com.ndtv.testcases.WebApplicationTestCases@24a35978] depends on not successfully finished methods
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -262,9 +191,30 @@ Session ID: b9bf6f4f37ccdb09024022ee4e2834b1
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="captureTemp">
+                  </a> <!-- captureTemp -->
+                  <span class="method-name">captureTemp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="launchNDTV">
                   </a> <!-- launchNDTV -->
                   <span class="method-name">launchNDTV</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToWeather">
+                  </a> <!-- navigateToWeather -->
+                  <span class="method-name">navigateToWeather</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateCityOnMap">
+                  </a> <!-- validateCityOnMap -->
+                  <span class="method-name">validateCityOnMap</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -380,42 +330,42 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'launchNDTV')
+data.setCell(0, 1, 'navigateToWeather')
 data.setCell(0, 2, 'com.ndtv.testcases.WebApplicationTestCases')
-data.setCell(0, 3, 33430);
+data.setCell(0, 3, 11484);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'navigateToWeather')
+data.setCell(1, 1, 'launchNDTV')
 data.setCell(1, 2, 'com.ndtv.testcases.WebApplicationTestCases')
-data.setCell(1, 3, 4050);
+data.setCell(1, 3, 4891);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'weatherJsonResponse')
 data.setCell(2, 2, 'com.ndtv.testcases.APITestCases')
-data.setCell(2, 3, 2009);
+data.setCell(2, 3, 2442);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'varianceCheck')
-data.setCell(3, 2, 'com.ndtv.testcases.ComparatorTestCase')
-data.setCell(3, 3, 644);
+data.setCell(3, 1, 'captureTemp')
+data.setCell(3, 2, 'com.ndtv.testcases.WebApplicationTestCases')
+data.setCell(3, 3, 894);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'extractResponseBody')
-data.setCell(4, 2, 'com.ndtv.testcases.APITestCases')
-data.setCell(4, 3, 6);
+data.setCell(4, 1, 'validateCityOnMap')
+data.setCell(4, 2, 'com.ndtv.testcases.WebApplicationTestCases')
+data.setCell(4, 3, 889);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'tempComparatorOfWebUIandAPI')
+data.setCell(5, 1, 'varianceCheck')
 data.setCell(5, 2, 'com.ndtv.testcases.ComparatorTestCase')
-data.setCell(5, 3, 1);
+data.setCell(5, 3, 743);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'captureTemp')
-data.setCell(6, 2, 'com.ndtv.testcases.WebApplicationTestCases')
-data.setCell(6, 3, 0);
+data.setCell(6, 1, 'extractResponseBody')
+data.setCell(6, 2, 'com.ndtv.testcases.APITestCases')
+data.setCell(6, 3, 5);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'validateCityOnMap')
-data.setCell(7, 2, 'com.ndtv.testcases.WebApplicationTestCases')
-data.setCell(7, 3, 0);
+data.setCell(7, 1, 'tempComparatorOfWebUIandAPI')
+data.setCell(7, 2, 'com.ndtv.testcases.ComparatorTestCase')
+data.setCell(7, 3, 3);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -448,28 +398,34 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">launchNDTV</span>
-                <span class="method-start">6991 ms</span>
+                <span class="method-start">6985 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">navigateToWeather</span>
-                <span class="method-start">40429 ms</span>
+                <span class="method-start">11884 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateCityOnMap</span>
+                <span class="method-start">23371 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">captureTemp</span>
+                <span class="method-start">24262 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">shutBrowser</span>
-                <span class="method-start">44512 ms</span>
+                <span class="method-start">25158 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ndtv.testcases.APITestCases</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">weatherJsonResponse</span>
-                <span class="method-start">45886 ms</span>
+                <span class="method-start">26577 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">extractResponseBody</span>
-                <span class="method-start">47898 ms</span>
+                <span class="method-start">29020 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -478,15 +434,15 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">tempComparatorOfWebUIandAPI</span>
-                <span class="method-start">48028 ms</span>
+                <span class="method-start">29122 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">varianceCheck</span>
-                <span class="method-start">48041 ms</span>
+                <span class="method-start">29134 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">shutBrowser</span>
-                <span class="method-start">48686 ms</span>
+                <span class="method-start">29880 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

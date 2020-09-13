@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Sep 13 23:31:13 IST 2020</td>
+<td>Started on:</td><td>Mon Sep 14 01:34:05 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (662 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (763 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,12 +76,17 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.ndtv.testcases.ComparatorTestCase.tempComparatorOfWebUIandAPI()'><b>tempComparatorOfWebUIandAPI</b><br>Test class: com.ndtv.testcases.ComparatorTestCase</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.ndtv.util.TemperatureUtility.compareTemperature(TemperatureUtility.java:59)
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Temperature in Kelvin from API response : 302.49 and Temperature in Kelvin from WebUI is 303.15,
+	Humidity from API response : 66.0 and humidity from WebUI is 79.0
+	at com.ndtv.util.TemperatureUtility.compareTemperature(TemperatureUtility.java:80)
 	at com.ndtv.testcases.ComparatorTestCase.tempComparatorOfWebUIandAPI(ComparatorTestCase.java:20)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace268086000", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace268086000'><pre>java.lang.NullPointerException
-	at com.ndtv.util.TemperatureUtility.compareTemperature(TemperatureUtility.java:59)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace271502370", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace271502370'><pre>java.lang.AssertionError: The following asserts failed:
+	Temperature in Kelvin from API response : 302.49 and Temperature in Kelvin from WebUI is 303.15,
+	Humidity from API response : 66.0 and humidity from WebUI is 79.0
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.ndtv.util.TemperatureUtility.compareTemperature(TemperatureUtility.java:80)
 	at com.ndtv.testcases.ComparatorTestCase.tempComparatorOfWebUIandAPI(ComparatorTestCase.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
