@@ -4,13 +4,26 @@
   <listeners>
     <listener class-name="com.ndtv.listeners.Listeners"/>
   </listeners>
+  <test thread-count="5" name="WebApplicationTest(failed)">
+    <classes>
+      <class name="com.ndtv.testcases.WebApplicationTestCases">
+        <methods>
+          <include name="validateCityOnMap"/>
+          <include name="initializeBrowserDriver"/>
+          <include name="navigateToWeather"/>
+          <include name="captureTemp"/>
+          <include name="shutBrowser"/>
+          <include name="launchNDTV"/>
+        </methods>
+      </class> <!-- com.ndtv.testcases.WebApplicationTestCases -->
+    </classes>
+  </test> <!-- WebApplicationTest(failed) -->
   <test thread-count="5" name="ComparatorAndVariance(failed)">
     <classes>
       <class name="com.ndtv.testcases.ComparatorTestCase">
         <methods>
           <include name="tempComparatorOfWebUIandAPI"/>
           <include name="shutBrowser"/>
-          <include name="varianceCheck"/>
         </methods>
       </class> <!-- com.ndtv.testcases.ComparatorTestCase -->
     </classes>
