@@ -2,7 +2,6 @@
 
 This branch is specific to coding assignment only. Commit will be done on this in frequent manner estimated final commit 11 Sept 2020.
 
-
 This file will let you know about the installation and required certificate to execute the test.
 
 # Prerequisite
